@@ -1,0 +1,543 @@
+<!--
+
+@project Title : Gmail about page clone
+@Description   : To clone the Gmail about page using HTML/ External CSS riched classes
+
+@author : Karthika Velmurugan
+@date   : Jan 23 2022
+
+
+-->
+
+<!--
+    @index.html -> Entry point of the Application. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail: Free,Private & Secure Email</title>
+
+    <!--Embedding the External style sheets-->
+    <link rel="stylesheet" href="styles/global.css" />
+
+    <!--Importing the material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+    <!--Adding the Javascript for controlling the Images changes-->
+    <script language='Javascript'>
+        function changeImage(i) {
+            if (i === 1) {
+                document.getElementById("img-icon-2-id").src = './images/cart-1.png';
+
+            }
+            if (i == 2) {
+                document.getElementById("img-icon-2-id").src = './images/cart-2.png';
+
+            }
+            if (i == 3) {
+
+                document.getElementById("img-icon-2-id").src = './images/cart-3.png';
+
+            }
+
+            if (i == 4) {
+                document.getElementById("img-icon-2-id").src = './images/cart-4.png';
+
+            }
+
+        }
+        function changeImage1(i) {
+
+
+            if (i == 5) {
+                document.getElementById("img-icon-3-id").src = './images/cart-5.png';
+
+
+            }
+            if (i == 6) {
+                document.getElementById("img-icon-3-id").src = './images/cart-6.png';
+
+            }
+            if (i == 7) {
+                document.getElementById("img-icon-3-id").src = './images/cart-7.png';
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+    <div class='gmail-about-body-container'>
+
+        <!--Header Section-->
+        <div class='header-section'>
+
+            <div class='header-logo-container'>
+                <img class='logo'
+                    src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97"
+                    alt="Gmail icon">
+                <div class='title'>Gmail</div>
+            </div>
+            <div class='header-action-buttons-container'>
+                <button class='action-btn plain-btn'>For work</button>
+                <button class='action-btn outline-btn'>Sign in</button>
+                <button class='action-btn filled-btn'>Create an account</button>
+
+            </div>
+        </div>
+
+        <!--Body Container-1-->
+        <div class='body-container-1'>
+
+            <div class='left-container-1'>
+
+                <div class='heading'>
+
+                    Secure, smart, and easy to use email
+                </div>
+                <div class="description">
+                    Get more done with Gmail. Now integrated with Google Chat, Google Meet, and more, all in one place.
+                </div>
+                <div class="buttons">
+
+                    <button class='action-btn filled-btn'>Create an account</button>
+                    <button class='action-btn plain-btn'>For work</button>
+                </div>
+
+
+            </div>
+            <div class='right-container-1'>
+                <img class='img-icon'
+                    src="https://lh3.googleusercontent.com/wu38duO7lcEY0BCo6qTkwcrOx5oFwFNLHRYud6POTb-URmZ2jlXHLq5PAUFGCUcVew7zCK-C4aNKuMSF-SQxU-5Vu4fjM_E2WWp-S_Y=rw-e365-w2880"
+                    alt="Gmail inbox screen with enlarged function icons"
+                    title='Gmail inbox screen with enlarged function icons'>
+            </div>
+
+        </div>
+
+        <!--Body Container 2-->
+        <div class="body-container-2">
+
+            <section class="left-container-2">
+
+                <div class='heading-container2'>
+                    Email that's secure, private, and puts you in control.
+                </div>
+                <li>
+                    <div class='notice-cart' onclick="changeImage(1)">
+                        <div class="divider">
+
+                            <div class='divider-filler'></div>
+                        </div>
+                        <div class="notice-info">
+                            <div class="notice-title">
+                                We never use your Gmail content for any ads purposes
+                            </div>
+                            <div class="notice-description">
+
+                                Gmail uses industry-leading encryption for all messages you receive and send. We never
+                                use your Gmail content to personalize ads.
+                            </div>
+                        </div>
+                </li>
+
+                <li>
+                    <div class='notice-cart' onclick="changeImage(2)">
+                        <div class="divider">
+
+                            <div class='divider-filler'></div>
+                        </div>
+                        <div class="notice-info">
+                            <div class="notice-title">
+                                Gmail keeps over a billion people safe every day
+                            </div>
+                            <div class="notice-description">
+
+                                Gmail blocks 99.9% of spam, malware, and dangerous links from ever reaching your inbox.
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class='notice-cart' onclick="changeImage(3)">
+                        <div class="divider">
+
+                            <div class='divider-filler'></div>
+                        </div>
+                        <div class="notice-info">
+                            <div class="notice-title">
+                                The most advanced phishing protections available
+                            </div>
+                            <div class="notice-description">
+
+                                When a suspecious email arrives that could be legitimate, Gmail lets you know,keeping
+                                you in control.
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class='notice-cart' onclick="changeImage(4)">
+                        <div class="divider">
+
+                            <div class='divider-filler'></div>
+                        </div>
+                        <div class="notice-info">
+                            <div class="notice-title">
+                                Best-in-class controls over emails you send
+                            </div>
+                            <div class="notice-description">
+
+                                Confidential Mode lets you set expirations and require receipients to verify by text.You
+                                can also remove options to forward,copy,download,and print.
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </section>
+            <section class="right-container-2">
+
+                <img class='img-icon2' id='img-icon-2-id' src='./images/cart-1.png' alt='image icon'
+                    title='Gamil feature Images' />
+            </section>
+        </div>
+
+
+        <!--Body Container 3-->
+        <div class="body-container-3">
+
+            <div class="left-container-3">
+                <img class='img-icon3' id='img-icon-3-id' src='./images/cart-5.png' alt='image icon'
+                    title='Gamil feature Images' />
+
+            </div>
+            <div class="right-container-3">
+                <div class='heading-container3'>
+                    Get more done with Gmail
+                </div>
+                <li>
+                    <div class='notice-cart' onclick="changeImage1(5)">
+                        <div class="divider">
+
+                            <div class='divider-filler'></div>
+                        </div>
+                        <div class="notice-info">
+                            <div class="notice-title">
+                                Stay connected and get organized
+                            </div>
+                            <div class="notice-description">
+
+                                Start a Chat,jump into a video call with Meet,or collaborate in a Doc,all right from
+                                Gmail.
+                            </div>
+                        </div>
+                </li>
+                <li>
+                    <div class='notice-cart' onclick="changeImage1(6)">
+                        <div class="divider">
+
+                            <div class='divider-filler'></div>
+                        </div>
+                        <div class="notice-info">
+                            <div class="notice-title">
+                                Get more done faster
+                            </div>
+                            <div class="notice-description">
+                                Write emails and messages faster with features like Smart Compose to spend more time
+                                doing what you love.
+                            </div>
+                        </div>
+                </li>
+                <li>
+                    <div class='notice-cart' onclick="changeImage1(7)">
+                        <div class="divider">
+
+                            <div class='divider-filler'></div>
+                        </div>
+                        <div class="notice-info">
+                            <div class="notice-title">
+                                Never forget to reply
+                            </div>
+                            <div class="notice-description">
+
+                                Gentle nudges help you stay on top of everything.
+                            </div>
+                        </div>
+                </li>
+
+            </div>
+        </div>
+
+        <!--Body container 4-->
+        <div class="body-container-4">
+            <div class="container-left-4">
+                <div class='container-4-icon'>
+
+                    <div class="icon">
+
+
+                        <span style="font-family: wingdings; font-size: 200%;">&#10003;</span>
+
+                    </div>
+                </div>
+                <h1 class="container-4-header">
+                    Work with other tools
+                </h1>
+                <h4 class="container-4-description">
+                    Gmail works great with desktop clients like Microsoft Outlook, Apple Mail and Mozilla Thunderbird,
+                    including contact and event sync.
+                </h4>
+            </div>
+            <div class="container-middle-4">
+                <div class='container-4-icon'>
+
+                    <div class="icon">
+
+
+
+
+                        <i class="material-icons">&#xe63e;</i>
+                    </div>
+
+
+                </div>
+                <h1 class="container-4-header">
+                    Stay productive, even offline
+                </h1>
+                <h4 class="container-4-description">
+                    Gmail offline lets you read, reply, delete, and search your Gmail messages when you’re not connected
+                    to the internet.
+                </h4>
+            </div>
+            <div class="container-right-4">
+                <div class='container-4-icon'>
+
+                    <div class="icon">
+
+
+                        <span class="material-icons">screen_share</span>
+
+                    </div>
+                </div>
+                <h1 class="container-4-header">
+                    Experience Gmail on any device
+                </h1>
+                <h4 class="container-4-description">
+                    Enjoy the ease and simplicity of Gmail, wherever you are.
+                </h4>
+            </div>
+
+        </div>
+
+
+        <!--body container 5-->
+        <div class="body-container-5">
+
+            <div class="icons-list">
+                <img class='logo'
+                    src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97"
+                    alt="Gmail icon">
+
+                <img class='logo'
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                    alt="Gmail icon">
+                <img class='logo' src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png"
+                    alt="Gmail icon">
+                <img class='logo'
+                    src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97"
+                    alt="Gmail icon">
+                <img class='logo'
+                    src="https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-96dp/logo_meet_2020q4_color_2x_web_96dp.png"
+                    alt="Gmail icon">
+
+            </div>
+            <div class='container-5-content'>
+                <h1 class="cotainer-5-heading">Gmail is now part of Google Workspace</h1>
+                <h3 class="container-5-sub-title">Collaborate faster, from any device, anytime, all in one place.</h3>
+                <h5 class="container-5-description">Google Workspace is a set of productivity and collaboration tools
+                    that helps individuals, teams, and businesses stay on top of everything. It is a flexible,
+                    innovative solution that includes all your favorite apps like Gmail, Calendar, Drive, Docs, Meet,
+                    and more.</h5>
+                <button class='action-btn plain-btn'>Learn more</button>
+            </div>
+        </div>
+
+
+        <!--body container 6-->
+        <div class="body-container-6">
+            <div class="left-container-6">
+                <h1 class='container-left-6-head'>Find the answers you need</h1>
+                <div class='cart'>
+                    <h1>Need more help?</h1>
+                    <h4 class='desc'>Browse tips and step-by-step guides made for both new users and power users.</h4>
+
+                    <button class='action-btn outline-btn'>Help Center</button>
+                </div>
+            </div>
+            <div class="right-container-6">
+
+                <li>
+
+                    <details>
+                        <summary class='list-line'>
+                            <h1 class='q1'>How does Gmail keep my email communications secure and private?</h1>
+                            <i class="material-icons" style='color:#1a73e8;font-size:38px'>keyboard_arrow_down</i>
+
+                        </summary>
+
+                        <div class="summary-content">Gmail has always had strong security as a foundation. We work hard
+                            to protect you from spam, phishing, and malware, before they reach your inbox. Our
+                            AI-enhanced spam-filtering capabilities block nearly 10 million spam emails every minute.
+                        </div>
+
+
+                    </details>
+                    <!-- <div class='list-line'>
+                        <h1 class='q1'>How does Gmail keep my email communications secure and private?</h1>
+                        <i class="material-icons" style='color:#1a73e8;font-size:38px'>keyboard_arrow_down</i>
+
+                    </div> -->
+                </li>
+                <div class='divider-tab'></div>
+                <h1></h1>
+                <li>
+
+                    <details>
+                        <summary class='list-line'>
+                            <h1 class='q1'>Do you use my email for ads?</h1>
+                            <i class="material-icons" style='color:#1a73e8;font-size:38px'>keyboard_arrow_down</i>
+
+                        </summary>
+
+                        <div class="summary-content">
+                            No. While you may see ads in your free Gmail account, your emails are private. Google does
+                            not scan or process Gmail content for advertising purposes.</div>
+
+
+                    </details>
+                </li>
+                <div class='divider-tab'></div>
+                <h1></h1>
+                <li>
+                    <details>
+                        <summary class='list-line'>
+                            <h1 class='q1'>How can I keep my emails even more safe and secure?</h1>
+                            <i class="material-icons" style='color:#1a73e8;font-size:38px'>keyboard_arrow_down</i>
+
+                        </summary>
+
+                        <div class="summary-content">
+                            While Gmail’s features are secure enough for most users, some accounts may require
+                            additional layers of safety. Google's Advanced Protection Program safeguards users with high
+                            visibility and sensitive information, who are at risk of targeted online attacks.</div>
+                        <button class='action-btn plain-btn'>Learn more</button>
+
+                    </details>
+                </li>
+                <div class='divider-tab'></div>
+                <h1></h1>
+                <li>
+
+                    <details>
+                        <summary class='list-line'>
+                            <h1 class='q1'>What if I want to use Gmail for work or my business?</h1>
+                            <i class="material-icons" style='color:#1a73e8;font-size:38px'>keyboard_arrow_down</i>
+
+                        </summary>
+
+                        <div class="summary-content">
+                            Gmail is part of Google Workspace where you can choose from different plans. In addition to
+                            what you love about Gmail, you get a custom email address (@yourcompany.com), unlimited
+                            group email addresses, 99.9% guaranteed uptime, twice the storage of personal Gmail, zero
+                            ads, 24/7 support, Google Workspace Sync for Microsoft Outlook, and more.</div>
+
+                        <button class='action-btn plain-btn'>Learn more</button>
+                    </details>
+                </li>
+                <div class='divider-tab'></div>
+                <h1></h1>
+            </div>
+        </div>
+
+
+        <!--body container 7-->
+        <div class="body-container-7">
+            <div class="icons-list">
+                <img class='logo'
+                    src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97"
+                    alt="Gmail icon">
+            </div>
+            <div class='details'>
+                <h1>Show the world
+                    how it’s done.</h1>
+                <h3>Get started with a more powerful Gmail.</h3>
+            </div>
+
+            <div class='btns'>
+                <button class='action-btn filled-btn'>Create an account</button>
+                <button class='action-btn plain-btn'>For work</button>
+            </div>
+
+        </div>
+
+        <!--body-container-8-->
+        <div class="body-container-8">
+
+            <img class='img'
+                src='https://lh3.googleusercontent.com/WWskrDqROp-Ogw-WQXQvjL9MX4T9UOeWIBHam6khfxMhU5-SHgojwZNNAzsfAKNSNHu7dceZ6rhXSEU6YqmE6QlG3sg8bsdbDQze0ljS=rw-e365-w2880'
+                alt='image feature' />
+        </div>
+
+
+        <!-- Footer-->
+
+
+
+        <div class='footer-section'>
+
+            <div class='footer-nav-items'>
+                <img class='google-img'
+                    src='https://gstatic.com/images/branding/googlelogo/svg/googlelogo_dark54_clr_84x28px.svg'
+                    alt='google-footer-img' />
+                <div>Privacy</div>
+                <div>Terms</div>
+                <div>About Google</div>
+
+                <div>Google Products</div>
+                <div>Our policy</div>
+
+
+            </div>
+
+            <div class='footer-help-buttons'>
+                <div>help</div>
+                <div>English(India)</div>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
