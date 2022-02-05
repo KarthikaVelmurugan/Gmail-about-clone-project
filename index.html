@@ -1,0 +1,689 @@
+<!--
+
+@project Title : Gmail about page clone
+@Description   : To clone the Gmail about page using HTML/ External CSS riched classes
+
+@author : Karthika Velmurugan
+@date   : Jan 23 2022
+
+
+-->
+
+<!--
+  Converting the css into tailwind css
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail: Free,Private & Secure Email</title>
+
+    <!--Embedding the External style sheets-->
+    <!-- <link rel="stylesheet" href="styles/global.css" /> -->
+
+    <!--Adding the .fav icon-->
+    <link rel="icon" type="image/png"
+        href="https://freepngimg.com/save/66912-logo-now-google-plus-search-free-transparent-image-hd/1200x1200" />
+
+    <!--Importing the material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+    <!--Adding the Javascript for controlling the Images changes-->
+    <script language='Javascript'>
+        function changeImage(i) {
+            if (i === 1) {
+                document.getElementById("img-icon-2-id").src = './images/cart-1.png';
+
+            }
+            if (i == 2) {
+                document.getElementById("img-icon-2-id").src = './images/cart-2.png';
+
+            }
+            if (i == 3) {
+
+                document.getElementById("img-icon-2-id").src = './images/cart-3.png';
+
+            }
+
+            if (i == 4) {
+                document.getElementById("img-icon-2-id").src = './images/cart-4.png';
+
+            }
+
+        }
+        function changeImage1(i) {
+
+
+            if (i == 5) {
+                document.getElementById("img-icon-3-id").src = './images/cart-5.png';
+
+
+            }
+            if (i == 6) {
+                document.getElementById("img-icon-3-id").src = './images/cart-6.png';
+
+            }
+            if (i == 7) {
+                document.getElementById("img-icon-3-id").src = './images/cart-7.png';
+
+            }
+        }
+
+    </script>
+
+    <!-- Importing the tailwind css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Style-->
+    <style>
+        details[open] summary~* {
+            animation: sweep 1s ease-in-out;
+        }
+
+        @keyframes sweep {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        summary {
+            list-style: none;
+        }
+
+        .summary-chevron-up svg {
+            opacity: 0.5;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        li {
+            list-style: none;
+
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 font-sans text-base font-normal text-body-color">
+
+
+    <div class='flex flex-col gap-[20px]'>
+
+        <!--Header Section-->
+        <div class='flex fixed top:0 bg-neutral-50 shadow-lg w-screen p-3 justify-between items-center'>
+
+            <div class='flex justify-evenly pl-24'>
+                <img class='w-[33px] h-[33px]'
+                    src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97"
+                    alt="Gmail icon">
+                <div class='pl-3 text-neutral-500 font-normal text-xl text-center'>Gmail</div>
+            </div>
+            <div class='flex gap-4 pr-8'>
+                <button
+                    class='bg-neutral-50 text-blue-500 border-1 border-slate-50  font-medium rounded-md cursor-pointer pl-4 pr-4 pt-2 pb-2 hover:bg-stone-100 hover:text-blue-800'>For
+                    work</button>
+                <button
+                    class='bg-neutral-50 text-blue-500 border-[2.3px] border-stone-200 cursor-pointer rounded-md pl-5 pr-5 pt-2 pb-2 hover:font-medium hover:text-blue-800 hover:border-[2px] hover:border-stone-300 hover:bg-stone-100 '>Sign
+                    in</button>
+                <button
+                    class='bg-blue-500 text-stone-50 font-medium rounded-md cursor-pointer pl-3 pr-3 pt-2 pb-2 hover:bg-blue-700 font-medium'>Create
+                    an account</button>
+                <button
+                    class='bg-blue-500 text-stone-50 font-medium rounded-md hidden cursor-pointer pl-3 pr-3 pt-2 pb-2 hover:bg-blue-700 font-medium'>Get
+                    Email</button>
+
+            </div>
+        </div>
+        <div class='flex flex-col gap-[85px] pl-[150px] pr-[100px] pt-[100px]'>
+            <!--Body Container-1-->
+            <div class="">
+                <div class="flex items-center justify-around gap-[70px]">
+
+                    <div class='flex flex-col gap-[40px] flex-[2.9]'>
+
+                        <div class='pr-[100px] flex text-[70px] leading-[88px]'>
+
+                            Secure, smart, and easy to use email
+                        </div>
+                        <div class="flex-1 text-stone-500 text-[20px] leading-[40px] pr-[20px]">
+                            Get more done with Gmail. Now integrated with Google Chat, Google Meet, and more, all in one
+                            place.
+                        </div>
+                        <div class="flex gap-6">
+
+                            <button
+                                class='bg-blue-500 text-stone-50 font-medium rounded-md cursor-pointer pl-4 pr-4 pt-3 pb-3 hover:bg-blue-700 font-medium'>Create
+                                an account</button>
+                            <button
+                                class='bg-blue-500 text-stone-50 font-medium hidden rounded-md  cursor-pointer pl-5 pr-5 pt-2 pb-2 hover:bg-blue-700 font-medium'>Get
+                                Gmail</button>
+                            <button
+                                class='bg-neutral-50 text-blue-500 border-1 border-slate-50  font-medium rounded-md cursor-pointer pl-5 pr-5 pt-3 pb-3 hover:bg-stone-100 hover:text-blue-800'>For
+                                work</button>
+                        </div>
+
+
+                    </div>
+                    <div class='flex-[3]'>
+                        <img src="https://lh3.googleusercontent.com/wu38duO7lcEY0BCo6qTkwcrOx5oFwFNLHRYud6POTb-URmZ2jlXHLq5PAUFGCUcVew7zCK-C4aNKuMSF-SQxU-5Vu4fjM_E2WWp-S_Y=rw-e365-w2880"
+                            alt="Gmail inbox screen with enlarged function icons"
+                            title='Gmail inbox screen with enlarged function icons'>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Body Container 2-->
+            <div class="flex gap-[20px]">
+
+                <section class="flex-[1.8] flex flex-col gap-[45px]">
+
+                    <div class='font-medium text-[42px] leading-[72px]'>
+                        Email that's secure, private, and puts you in control.
+                    </div>
+                    <div>
+                        <li>
+                            <div class="group">
+                                <div class='flex gap-[17px]' onclick="changeImage(1)">
+                                    <div class="flex-[0.023] h-[110px] bg-neutral-200">
+
+                                        <div
+                                            class='divider-filler h-[0px] bg-blue-500 rounded-sm transition-all ease-in-out duration-1000 group-hover:h-[110px]'>
+                                        </div>
+                                    </div>
+                                    <div class="flex-[3] flex flex-col gap-[12px]">
+                                        <div class="font-semibold text-gray-600 text-[20px]">
+                                            We never use your Gmail content for any ads purposes
+                                        </div>
+                                        <div class="text-[16px] font-sans leading-[24px] text-gray-500">
+
+                                            Gmail uses industry-leading encryption for all messages you receive and
+                                            send. We
+                                            never
+                                            use your Gmail content to personalize ads.
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class='hidden' src='./images/cart-1.png' alt='image icon'
+                                    title='Gamil feature Images' />
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="group">
+                                <div class='flex gap-[17px]' onclick="changeImage(2)">
+                                    <div class="flex-[0.023] h-[110px] bg-neutral-200">
+
+                                        <div
+                                            class='divider-filler h-[0px] bg-blue-500 rounded-sm transition-all ease-in-out duration-1000 group-hover:h-[110px]'>
+                                        </div>
+                                    </div>
+                                    <div class="flex-[3] flex flex-col gap-[12px]">
+                                        <div class="font-semibold text-gray-600 text-[20px]">
+                                            Gmail keeps over a billion people safe every day
+                                        </div>
+                                        <div class="text-[16px] font-sans leading-[24px] text-gray-500">
+
+                                            Gmail blocks 99.9% of spam, malware, and dangerous links from ever reaching
+                                            your inbox.
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class='hidden' src='./images/cart-2.png' alt='image icon'
+                                    title='Gamil feature Images' />
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="group">
+                                <div class='flex gap-[17px]' onclick="changeImage(3)">
+                                    <div class="flex-[0.023] h-[110px] bg-neutral-200">
+
+                                        <div
+                                            class='divider-filler h-[0px] bg-blue-500 rounded-sm transition-all ease-in-out duration-1000 group-hover:h-[110px]'>
+                                        </div>
+                                    </div>
+                                    <div class="flex-[3] flex flex-col gap-[12px]">
+                                        <div class="font-semibold text-gray-600 text-[20px]">
+                                            The most advanced phishing protections available
+                                        </div>
+                                        <div class="text-[16px] font-sans leading-[24px] text-gray-500">
+
+                                            When a suspecious email arrives that could be legitimate, Gmail lets you
+                                            know,keeping you in control.
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class='hidden' src='./images/cart-3.png' alt='image icon'
+                                    title='Gamil feature Images' />
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div class="group">
+                                <div class='flex gap-[17px]' onclick="changeImage(4)">
+                                    <div class="flex-[0.023] h-[110px] bg-neutral-200">
+
+                                        <div
+                                            class='divider-filler h-[0px] bg-blue-500 rounded-sm transition-all ease-in-out duration-1000 group-hover:h-[110px]'>
+                                        </div>
+                                    </div>
+                                    <div class="flex-[3] flex flex-col gap-[12px]">
+                                        <div class="font-semibold text-gray-600 text-[20px]">
+                                            Best-in-class controls over emails you send
+                                        </div>
+                                        <div class="text-[16px] font-sans leading-[24px] text-gray-500">
+
+                                            Confidential Mode lets you set expirations and require receipients to verify
+                                            by text.You can also remove options to forward,copy,download,and print.
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class='hidden' src='./images/cart-4.png' alt='image icon'
+                                    title='Gamil feature Images' />
+                            </div>
+                        </li>
+                    </div>
+                </section>
+                <section class="flex-[2] flex items-center justify-center">
+
+                    <img class='w-screen' id='img-icon-2-id' src='./images/cart-1.png' alt='image icon'
+                        title='Gamil feature Images' />
+                </section>
+            </div>
+
+
+            <!--Body Container 3-->
+            <div class="flex gap-[100px]">
+
+                <div class="flex[2.2]">
+                    <img class='' id='img-icon-3-id' src='./images/cart-5.png' alt='image icon'
+                        title='Gamil feature Images' />
+
+                </div>
+                <div class="flex-[2] flex flex-col gap-[40px]">
+                    <div class='font-medium text-[42px] leading-[72px]'>
+                        Get more done with Gmail
+                    </div>
+                    <div>
+                        <li>
+                            <div class="group">
+                                <div class='flex gap-[17px]' onclick="changeImage1(5)">
+                                    <div class="flex-[0.023] h-[110px] bg-neutral-200">
+
+                                        <div
+                                            class='divider-filler h-[0px] bg-blue-500 rounded-sm transition-all ease-in-out duration-1000 group-hover:h-[110px]'>
+                                        </div>
+                                    </div>
+                                    <div class="flex-[3] flex flex-col gap-[12px]">
+                                        <div class="font-semibold text-gray-600 text-[20px]">
+                                            Stay connected and get organized
+                                        </div>
+                                        <div class="text-[16px] font-sans leading-[24px] text-gray-500">
+
+                                            Start a Chat,jump into a video call with Meet,or collaborate in a Doc,all
+                                            right from Gmail.
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class='hidden' src='./images/cart-5.png' alt='image icon'
+                                    title='Gamil feature Images' />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="group">
+                                <div class='flex gap-[17px]' onclick="changeImage1(6)">
+                                    <div class="flex-[0.023] h-[110px] bg-neutral-200">
+
+                                        <div
+                                            class='divider-filler h-[0px] bg-blue-500 rounded-sm transition-all ease-in-out duration-1000 group-hover:h-[110px]'>
+                                        </div>
+                                    </div>
+                                    <div class="flex-[3] flex flex-col gap-[12px]">
+                                        <div class="font-semibold text-gray-600 text-[20px]">
+                                            Stay connected and get organized
+                                        </div>
+                                        <div class="text-[16px] font-sans leading-[24px] text-gray-500">
+
+                                            Start a Chat,jump into a video call with Meet,or collaborate in a Doc,all
+                                            right from Gmail.
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class='hidden' src='./images/cart-6.png' alt='image icon'
+                                    title='Gamil feature Images' />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="group">
+                                <div class='flex gap-[17px]' onclick="changeImage1(7)">
+                                    <div class="flex-[0.023] h-[110px] bg-neutral-200">
+
+                                        <div
+                                            class='divider-filler h-[0px] bg-blue-500 rounded-sm transition-all ease-in-out duration-1000 group-hover:h-[110px]'>
+                                        </div>
+                                    </div>
+                                    <div class="flex-[3] flex flex-col gap-[12px]">
+                                        <div class="font-semibold text-gray-600 text-[20px]">
+                                            Stay connected and get organized
+                                        </div>
+                                        <div class="text-[16px] font-sans leading-[24px] text-gray-500">
+
+                                            Start a Chat,jump into a video call with Meet,or collaborate in a Doc,all
+                                            right from Gmail.
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class='hidden' src='./images/cart-7.png' alt='image icon'
+                                    title='Gamil feature Images' />
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Body container 4-->
+        <div class="flex bg-gray-100 pl-[90px] pr-[90px] pt-[50px] pb-[50px] gap-[90px]">
+            <div class="flex-1 flex flex-col gap-[20px]">
+                <div class='flex'>
+
+                    <div class="flex items-center justify-center text-gray-50 rounded-full bg-blue-500 p-[10px]">
+
+
+                        <span style="font-family: wingdings; font-size: 200%;">&#10003;</span>
+
+                    </div>
+                </div>
+                <h1 class="font-medium text-[22px] text-slate-900">
+                    Work with other tools
+                </h1>
+                <h4 class="text-[16px] font-medium leading-[28px] text-gray-600">
+                    Gmail works great with desktop clients like Microsoft Outlook, Apple Mail and Mozilla Thunderbird,
+                    including contact and event sync.
+                </h4>
+            </div>
+            <div class="flex-1 flex flex-col gap-[20px]">
+                <div class='flex'>
+
+                    <div class="flex items-center justify-center text-gray-50 rounded-full bg-blue-500 p-[10px]">
+
+
+
+                        <i class="material-icons">&#xe63e;</i>
+                    </div>
+                </div>
+                <h1 class="font-medium text-[22px] text-slate-900">
+                    Stay productive, even offline
+                </h1>
+                <h4 class="text-[16px] font-medium leading-[28px] text-gray-600">
+                    Gmail offline lets you read, reply, delete, and search your Gmail messages when you’re not connected
+                    to the internet.
+                </h4>
+            </div>
+            <div class="flex-1 flex flex-col gap-[20px]">
+                <div class='flex'>
+
+                    <div class="flex items-center justify-center text-gray-50 rounded-full bg-blue-500 p-[10px]">
+
+
+
+
+                        <span class="material-icons">screen_share</span>
+
+                    </div>
+                </div>
+                <h1 class="font-medium text-[22px] text-slate-900">
+                    Experience Gmail on any device
+                </h1>
+                <h4 class="text-[16px] font-medium leading-[28px] text-gray-600">
+                    Enjoy the ease and simplicity of Gmail, wherever you are.
+                </h4>
+            </div>
+
+        </div>
+
+
+        <!--body container 5-->
+        <div class="flex flex-col items-center justify-center gap-[12px] p-[30px]">
+            <div class="w-[900px] flex flex-col items-center justify-center gap-[20px]">
+                <div class="flex gap-[20px]">
+                    <img class='h-[33px] w-[33px]'
+                        src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97"
+                        alt="Gmail icon">
+
+                    <img class='h-[30px] w-[30px]'
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                        alt="Gmail icon">
+                    <img class='h-[33px] w-[33px]'
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png"
+                        alt="Gmail icon">
+                    <img class='h-[30px] w-[30px]'
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Google_Docs_icon_%282020%29.svg/1200px-Google_Docs_icon_%282020%29.svg.png"
+                        alt="Gmail icon">
+                    <img class='h-[33px] w-[33px]'
+                        src="https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-96dp/logo_meet_2020q4_color_2x_web_96dp.png"
+                        alt="Gmail icon">
+
+                </div>
+                <div class='flex items-center flex-col gap-[40px]'>
+                    <h1 class="text-[32px] text-center font-semibold text-gray-700">Gmail is now part of Google
+                        Workspace</h1>
+                    <h3 class="text-[27px] text-center text-gray-500">Collaborate faster, from any device, anytime, all
+                        in one place.</h3>
+                    <h5 class="text-[18px] font-normal leading-[30px] text-gray-500 text-center">Google Workspace is a
+                        set of productivity and collaboration tools
+                        that helps individuals, teams, and businesses stay on top of everything. It is a flexible,
+                        innovative solution that includes all your favorite apps like Gmail, Calendar, Drive, Docs,
+                        Meet,
+                        and more.</h5>
+                    <button
+                        class='bg-neutral-50  text-blue-500 border-1 border-slate-50  font-medium rounded-md cursor-pointer pl-5 pr-5 pt-3 pb-3 hover:bg-stone-100 hover:text-blue-800'>Learn
+                        more</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--body container 6-->
+        <div class="flex bg-gray-100 items-center pt-[50px] pb-[50px] pl-[100px] pr-[100px]">
+            <div class="flex-[1.3] flex-col flex gap-[30px]">
+                <h1 class='text-[44px] leading-[52px] font-semibold'>Find the answers you need</h1>
+                <div
+                    class='flex flex-col gap-[20px] border-2 border-gray-200 rounded-md p-[10px] bg-gray-50 pt-[30px] pr-[50px] pl-[50px] pb-[30px] w-[380px] text-[13px]'>
+                    <h1 class='text-[26px] font-medium'>Need more help?</h1>
+                    <h4 class='text-gray-500 text-[18px] font-normal'>Browse tips and step-by-step guides made for both
+                        new users and power users.</h4>
+                    <div>
+                        <button
+                            class='bg-neutral-50 text-[15px] text-blue-500 border-[2.3px] border-stone-200 cursor-pointer rounded-md pl-5 pr-5 pt-2 pb-2 hover:font-medium hover:text-blue-500 hover:border-[2px] hover:border-blue-300 hover:bg-stone-100 '>Help
+                            Center</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-[1.3]">
+
+                <li>
+
+                    <details>
+                        <summary class='flex cursor-pointer justify-between'>
+                            <h1 class='text-[19px] leading-[28px] font-sans text-gray-800'>How does Gmail keep my email
+                                communications secure and private?</h1>
+
+                            <i class="material-icons" style='color:#1a73e8;font-size:38px'>keyboard_arrow_down</i>
+
+                        </summary>
+
+                        <div class="cursor-default text-[16px] font-normal leading-[28px] text-gray-500">Gmail has
+                            always had strong security as a foundation. We work hard
+                            to protect you from spam, phishing, and malware, before they reach your inbox. Our
+                            AI-enhanced spam-filtering capabilities block nearly 10 million spam emails every minute.
+                        </div>
+
+
+                    </details>
+                    <!-- <div class='list-line'>
+                        <h1 class='q1'>How does Gmail keep my email communications secure and private?</h1>
+                        <i class="material-icons" style='color:#1a73e8;font-size:38px'>keyboard_arrow_down</i>
+
+                    </div> -->
+                </li>
+                <div class='bg-gray-300 w-[100%] p-[0.23px] mt-[10px] mb-[40px]'></div>
+                <h1></h1>
+                <li>
+
+                    <details>
+                        <summary class='flex cursor-pointer justify-between'>
+                            <h1 class='text-[19px] leading-[28px] font-sans text-gray-800'>Do you use my email for ads?
+                            </h1>
+                            <i class="material-icons" style='color:#1a73e8;font-size:38px'>keyboard_arrow_down</i>
+
+                        </summary>
+
+                        <div class="cursor-default text-[16px] font-normal leading-[28px] text-gray-500">
+                            No. While you may see ads in your free Gmail account, your emails are private. Google does
+                            not scan or process Gmail content for advertising purposes.</div>
+
+
+                    </details>
+                </li>
+                <div class='bg-gray-300 w-[100%] p-[0.23px] mt-[10px] mb-[40px]'></div>
+                <h1></h1>
+                <li>
+                    <details>
+                        <summary class='flex cursor-pointer justify-between'>
+                            <h1 class='text-[19px] leading-[28px] font-sans text-gray-800'>How can I keep my emails even
+                                more safe and secure?</h1>
+                            <i class="material-icons" style='color:#1a73e8;font-size:38px'>keyboard_arrow_down</i>
+
+                        </summary>
+
+                        <div class="cursor-default text-[16px] font-normal leading-[28px] text-gray-500">
+                            While Gmail’s features are secure enough for most users, some accounts may require
+                            additional layers of safety. Google's Advanced Protection Program safeguards users with high
+                            visibility and sensitive information, who are at risk of targeted online attacks.</div>
+                        <div class='pt-[20px]'> <button
+                                class='bg-neutral-50 text-blue-500 border-1 border-slate-50  font-medium rounded-md cursor-pointer pl-4 pr-4 pt-2 pb-2 hover:bg-stone-100 hover:text-blue-800'>Learn
+                                more</button>
+                        </div>
+                    </details>
+                </li>
+                <div class='bg-gray-300 w-[100%] p-[0.23px] mt-[10px] mb-[40px]'></div>
+                <h1></h1>
+                <li>
+
+                    <details>
+                        <summary class='flex cursor-pointer justify-between'>
+                            <h1 class='text-[19px] leading-[28px] font-sans text-gray-800'>What if I want to use Gmail
+                                for work or my business?</h1>
+                            <i class="material-icons" style='color:#1a73e8;font-size:38px'>keyboard_arrow_down</i>
+
+                        </summary>
+
+                        <div class="cursor-default text-[16px] font-normal leading-[28px] text-gray-500">
+                            Gmail is part of Google Workspace where you can choose from different plans. In addition to
+                            what you love about Gmail, you get a custom email address (@yourcompany.com), unlimited
+                            group email addresses, 99.9% guaranteed uptime, twice the storage of personal Gmail, zero
+                            ads, 24/7 support, Google Workspace Sync for Microsoft Outlook, and more.</div>
+
+                        <div class='pt-[20px]'> <button
+                                class='bg-neutral-50 text-blue-500 border-1 border-slate-50  font-medium rounded-md cursor-pointer pl-4 pr-4 pt-2 pb-2 hover:bg-stone-100 hover:text-blue-800'>Learn
+                                more</button>
+                        </div>
+                    </details>
+                </li>
+                <div class='bg-gray-300 w-[100%] p-[0.23px] mt-[10px] mb-[40px]'></div>
+                <h1></h1>
+            </div>
+        </div>
+
+
+        <!--body container 7-->
+        <div class="flex flex-col gap-[20px] items-center justify-center p-[20px]">
+            <div class="">
+                <img class='h-[33px] w-[33px]'
+                    src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97"
+                    alt="Gmail icon">
+            </div>
+            <div class='text-center flex flex-col gap-[20px]'>
+                <h1 class='text-[32px] font-semibold'>Show the world
+                    how it’s done.</h1>
+                <h3 class='text-[20px] font-medium'>Get started with a more powerful Gmail.</h3>
+            </div>
+
+            <div class='flex gap-[10px]'>
+                <button
+                    class='bg-blue-500 text-stone-50 font-medium rounded-md cursor-pointer pl-4 pr-4 pt-3 pb-3 hover:bg-blue-700 font-medium'>Create
+                    an account</button>
+                <button
+                    class='bg-neutral-50 text-blue-500 border-1 border-slate-50  font-medium rounded-md cursor-pointer pl-4 pr-4 pt-2 pb-2 hover:bg-stone-100 hover:text-blue-800'>For
+                    work</button>
+            </div>
+
+        </div>
+
+        <!--body-container-8-->
+        <div>
+
+
+            <img class='w-screen'
+                src='https://lh3.googleusercontent.com/WWskrDqROp-Ogw-WQXQvjL9MX4T9UOeWIBHam6khfxMhU5-SHgojwZNNAzsfAKNSNHu7dceZ6rhXSEU6YqmE6QlG3sg8bsdbDQze0ljS=rw-e365-w2880'
+                alt='image feature' />
+        </div>
+    </div>
+
+    <!-- Footer-->
+
+
+
+    <div class='flex bg-gray-50 shadow-2xl p-[18px] items-center'>
+
+        <div class='flex-1 flex gap-[40px] items-center'>
+            <img class='w-[10%] h-[43%]'
+                src='https://gstatic.com/images/branding/googlelogo/svg/googlelogo_dark54_clr_84x28px.svg'
+                alt='google-footer-img' />
+            <div>Privacy</div>
+            <div>Terms</div>
+            <div>About Google</div>
+
+            <div>Google Products</div>
+            <div>Our policy</div>
+
+
+        </div>
+
+        <div class='flex flex-[0.5] gap-[20px] justify-end pr-[20px]'>
+            <div>help</div>
+            <div>English(India)</div>
+
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
